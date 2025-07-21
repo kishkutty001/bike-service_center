@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Top header -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:text="Mechanics"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="+ Add Mechanic"
+                android:backgroundTint="#FF6F00"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Search bar -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:hint="Search mechanics..."
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:src="@drawable/filter"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Filter"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+
+        <!-- Mechanics list -->
+        <!-- Repeat this card for each mechanic -->
+        <include layout="@layout/item_mechanic_card"/>
+        <include layout="@layout/item_mechanic_card"/>
+        <include layout="@layout/item_mechanic_card"/>
+
+    </LinearLayout>
+</ScrollView>
