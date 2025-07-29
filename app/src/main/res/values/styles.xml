@@ -1,8 +1,0 @@
-<style name="SpecializationTag">
-    <item name="android:layout_marginEnd">8dp</item>
-    <item name="android:layout_marginBottom">8dp</item>
-    <item name="android:padding">8dp</item>
-    <item name="android:textColor">#333333</item>
-    <item name="android:background">@drawable/bg_chip</item>
-    <item name="android:textSize">13sp</item>
-</style>
